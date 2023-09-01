@@ -1,0 +1,9 @@
+.display {
+    width: 50%;
+    height: 40px ;
+    border-radius: 6px;
+    box-shadow: 0 3px #111010;
+}
+.container {
+ border-radius: 16px;
+}

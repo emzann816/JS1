@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="weightingscale.css">
+    <title>
+        Calculator & Weighting Scale
+    </title>
+</head>
+<body class="bg-warning-subtle">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light link-dark" aria-current="page" href="index.html"><b class="fa-calculator">Calculater </b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light link-dark" href="weightingscale.html"><b>Weighting Scale <i class="fa fa-balance-scale" aria-hidden="true"></i></b></a>
+              </li>
+              </ul>
+              </div>
+              </div>
+    </nav>
+    
+
+        
+        
+    <h2 class="text-center mt-5"> Weight Convertor </h2>
+    <center>
+        <div class="container bg-primary m-2 w-50 " >
+        <p class="text-center mt-2">
+    <b>Input Grams(g): </b><input type="number" name="grams" id="grams" class="display mt-5" placeholder="Enter your weight in gram">
+    </p>
+    <h6 class="text-center mt-2"><b> Kilogram(kg):</h6> <p id="g"> </p></b>
+    
+    <button onclick="kilo()" class="mb-5">Convert</button>
+        
+        </div></center>
+     <br>
+    <center>
+        <div class="container bg-primary m-2 w-50 " >
+        <p class="text-center mt-2">
+    <b>Input Kilogram(Kg): </b><input type="number" name="grams" id="kilograms" class="display mt-5" placeholder="Enter your weight in kilogram">
+    </p>
+    <h6 class="text-center mt-2"><b> Pounds:</h6> <p id="k1"> </p></b>
+    
+   <button onclick="pounds()" class="mb-5">Convert</button> 
+        
+        </div></center>
+    
+
+    <footer class="container-fluid w-100 py-4 flex-shrink-0 bg-dark">
+        <div class="container py-4">
+            <div class="row gy-3 gx-3">
+                <div class="col-lg-4 col-md-4">
+                  <p class="small text-muted pt-2 mb-0 text-light"><h4 class="text-light">Follow us </h4></p>
+                    <a href="https://www.facebook.com"  class="fa fa-facebook text-center text-light text-decoration-none p-3 m-auto rounded-circle" style="background-color: #3B5998; width: 60px; height: 60px; font-size: 30px;"></a>
+                      <a href="https://www.twitter.com" class="fa fa-twitter text-center text-light text-decoration-none p-3 ms-1 me-1 rounded-circle" style="background-color: #55ACEE; width: 60px; height: 60px; font-size: 30px;"></a>
+                        
+                        
+                    
+                    
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6">
+              <div class="">
+                <h4 class="text-light">Quick Link</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-light">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-light">About Us</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-light">Calculator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-light">Sample Outputs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="text-light"> What we do</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="weightingscale.html" class="text-decoration-none text-light">Weighting Scale</a>
+                  </li>
+                  
+                  
+                  <li>
+                    <a href="#" class="text-decoration-none text-light">Social Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="text-light">Newsletter</h4>
+                <div>
+                  <label for="Newsletter" class="form-label text-light">Subscribe To Our Newsletter</label>
+                  <input type="text" class="form-control" Placeholder="Enter Your Email">
+                  <button class="btn btn-primary fa fa-paper-plane mt-3" data-bs-toggle="modal" id="exampleModalLabel2" data-bs-target="#exampleModal2">  Subscribe</button>
+                  
+                  
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel2"> Subscribe </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Thank you for subcribing! 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                          
+                        </div>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+                </div>
+            </div>
+          
+          <div class="d-flex justify-content-center">
+            <div class="copyright">
+              <p class="small  pt-2 mb-0 text-light">&copy; Copyrights @ 2023 All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="weightingscale.js"></script>
+</body>
+</html>
